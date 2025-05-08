@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 20px;
+	background: white;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+.contenido{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 80%;
+}
+.contenido-pagina {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRa1oBaK-1qnmB8Gv35ilYTQ4LqnhRfDG6Gw&ss'); /* Reemplaza con tu imagen */
+	background-size: cover;
+	background-position: center;
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	border-radius: 10px;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animación de giro sobre ejes X e Y */
+  .contenido-pagina:hover {
+	transform: rotateX(180deg) rotateY(180deg);
+  }
+  
+  /* Estilo del enlace dentro */
+  .contenido-pagina a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+	text-shadow: 1px 1px 3px black;
+  }

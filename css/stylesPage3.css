@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 20px;
+	background: linear-gradient(to bottom, #ef550f 50%, #f2f2f2 50%);
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h1 {
+	font-size: 2em;
+	color: #333;
+	color: white;
+}
+
+p {
+	font-size: 1em;
+	color: #666;
+	margin-top: 10px;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: white;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	row-gap: 10px;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Estilo general para las imágenes */
+.gallery img {
+	width: 250px;
+	height: 250px;
+}
+
+/* MEDIA QUERIES */
+
+/* Pequeño: < 480px = 1 columna */
+@media (max-width: 479px) {
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* Mediano: < 900px = 2 columnas */
+@media (max-width: 479px) {
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* Mediano: < 900px = 2 columnas */
+@media (min-width: 480px) and (max-width: 899px) {
+	.gallery {
+		justify-content: center;
+	}
+}
+
+/* Grande: < 1200px = 3 columnas */
+@media (min-width: 900px) and (max-width: 1199px) {
+	.gallery {
+		justify-content: center;
+	}
+}
+
+/* Extra grande: >= 1200px */
+@media (min-width: 1200px) {
+	.gallery {
+		justify-content: center;
+	}
+}
+
+.gallery img:hover {
+	opacity: 1; /* Opacidad al 100% al hacer hover (10% más) */
+}
+
+.textofinal {
+	color: black;
+	text-align: center;
+}
+.textofinal span {
+    text-decoration: underline;
+    
+  }
+.boton {
+    
+	display: flex;
+	margin: 15px auto;
+	background-color: #ef550f;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 999px; /* Borde circular */
+	cursor: pointer;
+	font-size: 1em;
+	transition: background-color 0.3s ease;
+}

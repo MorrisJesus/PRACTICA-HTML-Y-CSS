@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario pagina 2</title>
+  <link rel="stylesheet" href="../css/stylesPage1.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="icon-bar">
+    <div class="icon-bar">
+        <!-- Icono Sol -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="white" d="M12 4a1 1 0 0 1 1 1V6a1 1 0 0 1-2 0V5a1 1 0 0 1 1-1Zm6.364 1.636a1 1 0 0 1 1.414 0l.707.707a1 1 0 1 1-1.414 1.414l-.707-.707a1 1 0 0 1 0-1.414ZM20 11a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1Zm-2.222 6.364a1 1 0 0 1 0 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0ZM12 18a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1Zm-6.364-1.636a1 1 0 0 1 1.414 0l.707.707a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 0-1.414ZM4 13a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2H4Zm2.222-6.364a1 1 0 0 1 1.414 1.414l-.707.707A1 1 0 1 1 5.515 7.05l.707-.707A1 1 0 0 1 6.222 6.636ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/>
+        </svg>
+      
+        <!-- Icono tipo Vercel -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="white" d="M12 2L1 21h22L12 2z"/>
+        </svg>
+      
+        <!-- Icono Portapapeles -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="white" d="M16 4h-1.18A3.001 3.001 0 0 0 12 2a3.001 3.001 0 0 0-2.82 2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-4-1a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm4 17H8V6h1v1a1 1 0 1 0 2 0V6h2v1a1 1 0 1 0 2 0V6h1v14Z"/>
+        </svg>
+      
+        <!-- Icono Código <>
+        -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="white" d="M8.7 6.3a1 1 0 0 1 1.4 1.4L7.41 10l2.7 2.3a1 1 0 1 1-1.4 1.4L5.3 10.7a1 1 0 0 1 0-1.4l3.4-3Zm6.6 0a1 1 0 0 0-1.4 1.4L16.59 10l-2.7 2.3a1 1 0 1 0 1.4 1.4l3.4-3a1 1 0 0 0 0-1.4l-3.4-3Z"/>
+        </svg>
+      </div>      
+  </div>
+
+  <form>
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder=" " required>
+      <label for="name">Name</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" id="email" name="email" placeholder=" " required>
+      <label for="email">Email</label>
+    </div>
+
+    <div class="form-group">
+      <select id="item" name="item" required>
+        <option value="" disabled selected hidden></option>
+        <option>Item 1</option>
+        <option>Item 2</option>
+        <option>Item 3</option>
+      </select>
+      <label for="item">Item</label>
+    </div>
+
+    <div class="upload-area">
+      <label for="file-upload" class="upload-box">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 5.5A6.5 6.5 0 1 1 5.5 12 6.5 6.5 0 0 1 12 5.5m0-2A8.5 8.5 0 1 0 20.5 12 8.5 8.5 0 0 0 12 3.5Z"/>
+        </svg>
+        <p>Drop your image here</p>
+      </label>
+      <input type="file" id="file-upload" name="file" accept="image/*">
+    </div>
+
+    <div class="file-path-display">
+      <input type="text" readonly placeholder="La ruta del archivo seleccionado aparece aquí">
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" id="agree" name="agree">
+      <label for="agree">Do you agree?</label>
+    </div>
+
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    padding: 0px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 1px solid #424242;
+  }
+  
+  /* Barra de iconos */
+  .icon-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    background-color: #2a2a2a;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .icon-bar svg {
+    width: 22px;
+    height: 22px;
+    fill: #ccc;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon-bar svg:hover {
+    fill: white;
+  }
+  
+  /* Estilo de inputs y select */
+  .form-group {
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+  }
+  .form-group input, .form-group select{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #444;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  .form-group select{
+    padding: 10px 10px;
+  }
+  .form-group option{
+    background-color: #000;
+    border: 1px solid #424242;
+  }
+  
+  /* Etiqueta animada */
+  .form-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #aaa;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+  }
+  
+  /* Movimiento de etiqueta al enfocar o escribir */
+  .form-group input:focus ~ label,
+  .form-group input:not(:placeholder-shown) ~ label,
+  .form-group select:focus ~ label,
+  .form-group select:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #00e5ff;
+  }
+  
+  /* Cambio de color del borde al enfocar */
+  .form-group input:focus,
+  .form-group select:focus {
+    border-bottom: 2px solid #00e5ff;
+  }
+  
+  /* Personalización del select */
+  .form-group select {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    padding-right: 28px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M7 10l5 5 5-5z' fill='%23888'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0 top 50%;
+    background-size: 16px 16px;
+  }
+  
+  /* Área de carga de archivos */
+  .upload-area {
+    margin-bottom: 20px;
+  }
+  
+  .upload-box {
+    background-color: #2a2a2a;
+    border: 2px dashed #444;
+    height: 60px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    margin: 15px;
+  }
+  
+  .upload-box:hover {
+    border-color: #00e5ff;
+  }
+  
+  .upload-box svg {
+    width: 24px;
+    height: 24px;
+    fill: #999;
+    transition: fill 0.3s ease;
+  }
+  
+  .upload-box:hover svg {
+    fill: #fff;
+  }
+  
+  .upload-area input[type="file"] {
+    display: none;
+  }
+  
+  .file-path-display input {
+    width: 94%;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 8px 10px;
+    color: #ccc;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    outline: none;
+    margin: 15px;
+  }
+  
+  .file-path-display input:focus {
+    border-color: #00e5ff;
+  }
+  
+  /* Checkbox */
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    accent-color: #00e5ff;
+    margin-right: 10px;
+    margin: 15px;
+  }
+  
+  /* Botones */
+  .buttons {
+    display: flex;
+    gap: 12px;
+    margin: 15px;
+  }
+  
+  .buttons button {
+    flex: 1;
+    padding: 10px 16px;
+    background-color: #333;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #444;
+  }

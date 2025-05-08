@@ -19,10 +19,17 @@ body {
 header {
 	text-align: center;
 	margin-bottom: 30px;
+	font-size: 20px;
 }
 
+.contenido{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 80%;
+}
 .contenido-pagina {
-	background-image: url('https://via.placeholder.com/300x300'); /* Reemplaza con tu imagen */
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRa1oBaK-1qnmB8Gv35ilYTQ4LqnhRfDG6Gw&ss'); /* Reemplaza con tu imagen */
 	background-size: cover;
 	background-position: center;
 	width: 150px;
